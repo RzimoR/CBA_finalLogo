@@ -51,15 +51,76 @@ function renderCharts(results) {
 <body>
 
 <div class="d-flex align-items-center mb-4">
-    <img src="static/isgan-logo.png" alt="ISGAN Logo" style="height: 80px; margin-right: 20px;">
+    <img src="isgan-logo.png" alt="ISGAN Logo" style="height: 80px; margin-right: 20px;">
     <div>
         <h1 class="mb-0">Economic Evaluation of Investment Alternatives</h1>
-        <p class="text-muted">Compare up to 6 alternatives</p>
+        <p class="text-muted small" style="font-size: smaller;">Compare up to 6 alternatives</p>
     </div>
 </div>
 
     <h1 class="mb-4">Compare up to 6 Alternatives</h1>
     <form id="calcForm">
+<table class="table table-bordered table-striped align-middle">
+    <thead class="table-light">
+        <tr>
+            <th>Alternative</th>
+            <th>CAPEX (€)</th>
+            <th>OPEX (€)</th>
+            <th>Benefits (€)</th>
+            <th>Years</th>
+            <th>Discount Rate (%)</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr>
+            <td><strong>A.1</strong></td>
+            <td><input type="number" id="capex1" class="form-control" step="any"></td>
+            <td><input type="number" id="opex1" class="form-control" step="any"></td>
+            <td><input type="number" id="benefits1" class="form-control" step="any"></td>
+            <td><input type="number" id="years1" class="form-control"></td>
+            <td><input type="number" id="rate1" class="form-control" step="any"></td>
+        </tr>
+<tr>
+            <td><strong>A.2</strong></td>
+            <td><input type="number" id="capex2" class="form-control" step="any"></td>
+            <td><input type="number" id="opex2" class="form-control" step="any"></td>
+            <td><input type="number" id="benefits2" class="form-control" step="any"></td>
+            <td><input type="number" id="years2" class="form-control"></td>
+            <td><input type="number" id="rate2" class="form-control" step="any"></td>
+        </tr>
+<tr>
+            <td><strong>A.3</strong></td>
+            <td><input type="number" id="capex3" class="form-control" step="any"></td>
+            <td><input type="number" id="opex3" class="form-control" step="any"></td>
+            <td><input type="number" id="benefits3" class="form-control" step="any"></td>
+            <td><input type="number" id="years3" class="form-control"></td>
+            <td><input type="number" id="rate3" class="form-control" step="any"></td>
+        </tr>
+<tr>
+            <td><strong>A.4</strong></td>
+            <td><input type="number" id="capex4" class="form-control" step="any"></td>
+            <td><input type="number" id="opex4" class="form-control" step="any"></td>
+            <td><input type="number" id="benefits4" class="form-control" step="any"></td>
+            <td><input type="number" id="years4" class="form-control"></td>
+            <td><input type="number" id="rate4" class="form-control" step="any"></td>
+        </tr>
+<tr>
+            <td><strong>A.5</strong></td>
+            <td><input type="number" id="capex5" class="form-control" step="any"></td>
+            <td><input type="number" id="opex5" class="form-control" step="any"></td>
+            <td><input type="number" id="benefits5" class="form-control" step="any"></td>
+            <td><input type="number" id="years5" class="form-control"></td>
+            <td><input type="number" id="rate5" class="form-control" step="any"></td>
+        </tr>
+<tr>
+            <td><strong>A.6</strong></td>
+            <td><input type="number" id="capex6" class="form-control" step="any"></td>
+            <td><input type="number" id="opex6" class="form-control" step="any"></td>
+            <td><input type="number" id="benefits6" class="form-control" step="any"></td>
+            <td><input type="number" id="years6" class="form-control"></td>
+            <td><input type="number" id="rate6" class="form-control" step="any"></td>
+        </tr>
+</tbody></table>
         <div class="row">
             
     <div class="col-md-4">
